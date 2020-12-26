@@ -70,7 +70,6 @@ ol {
   justify-content: center;
 }
 
-
 /* nav syntax to support mobile */
 @media all and (min-width: 600px){
   header {
@@ -103,6 +102,7 @@ h2 {
 section {
   text-align: center;
   margin-bottom: 100px;
+  justify-content: center;
 }
 
 p {
@@ -162,7 +162,6 @@ img {
 
 section.bg-callout {   
    padding: 60px 0;
-   background-color: lightgray;
 }
 
 footer {
@@ -177,4 +176,7 @@ footer p {
   padding: 10% 0 10% 0;
 }
 
+article .group {
+  flex-direction: column;
+}
 
