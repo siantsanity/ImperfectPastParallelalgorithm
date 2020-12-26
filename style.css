@@ -168,6 +168,8 @@ section.bg-callout {
 }
 
 footer {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
   background-color: black;
   text-align: center;
   color: white;
