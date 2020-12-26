@@ -94,10 +94,16 @@ h2 h3 {
   margin: 0 0 30px 10px;
   color: white;
   justify-content: center;
+  font-size: 25;
 }
 
 h2 {
   text-align: center;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 section {
@@ -139,7 +145,7 @@ img {
 .group {
   display: flex;
   flex-direction: column;
-  justify-content: safe;
+  justify-content: center;
   margin: 100px;
 }
 
@@ -157,14 +163,16 @@ img {
 }
 
 .item {
-  flex: 2;
+  flex: 1;
   align-content: auto;
   margin: auto;
+  padding: 20em 0;
 }
 
-section.bg-callout {   
+.bg-callout {   
    padding: 60px 0;
-   text-shadow: 2 #2f3061;
+   background-image: url("images/common1.jpeg");
+
 }
 
 footer {
