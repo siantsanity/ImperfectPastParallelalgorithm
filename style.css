@@ -1,10 +1,18 @@
+
+body {
+  background-color: #2f3061;
+  margin: 0;
+  background-image: url("images/common.jpeg");
+  background-size: cover;
+}
+
 header {
-  background-color: #000;
+  background-color: burlywood;
   margin-bottom: 40px;
 }
 
 header h1 {
-  color: #fff;
+  color: black;
   text-align: center;
   margin: 0;
   padding-top: 20px;
@@ -30,17 +38,45 @@ header nav ul li a {
 header nav ul li:last-child a {
   margin-right: 0;
 }
+
+a:link { color: blue }
+a:visited { color: black }
+a:hover { color: red }
+a:active { color: pink }
+
+/* buttons for links */
+
+.btn {
+  display: inline-block;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: white;
+  border-color: #2e6da4;
+}
+
+ol {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  justify-content: center;
+}
+
+
 /* nav syntax to support mobile */
 @media all and (min-width: 600px){
   header {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
-  }
-
-  header h1 {
-    margin: 14px 0;
-    padding-top: 0;
   }
 
   header nav {
@@ -52,39 +88,57 @@ header nav ul li:last-child a {
   }
 }
 
-main {
+h2 h3 {
+  text-align: center;
   padding: 20px 0;
-}
-
-section {
-  margin-bottom: 100px;
-}
-
-h1 {
   margin: 0 0 30px 10px;
+  color: white;
+  justify-content: center;
 }
 
 h2 {
   text-align: center;
-  margin: 0 10px;
-  border-bottom: 1px solid gray;
 }
 
-h3 {
+section {
   text-align: center;
-  margin: 12px 0;
-  border-bottom: 1px solid lightgray;
+  margin-bottom: 100px;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin: 10% 0 10% 0;
+}
+
+ul {
+  text-align: center;
+  color: black;
+  list-style: none;
+  font-size: 20px;
+}
+
+hr {
+  height: 20px;
+  background-color: black;
+  border: #f26df9;
+  margin: 10%;
 }
 
 img {
-  width: 100%
+  margin: auto;
+  width: 100%;
+  padding: 20px 20px 0 0;
+  border-radius: 20em;
 }
 
 .group {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: safe;
+  margin: 100px;
 }
 
 /* Groups & Items  (Desktop) */
@@ -100,30 +154,27 @@ margin: 100px;
   }
 }
 
-
-
 .item {
   flex: 1;
   align-content: auto;
-  margin: 10%;
-}
-
-.item-double {
-  flex-grow: 2;
+  margin: auto;
 }
 
 section.bg-callout {   
    padding: 60px 0;
    background-color: lightgray;
-   background-image: url("images/ocean.jpeg");
-}
-
-p {
-  font-size: 16px;
 }
 
 footer {
+  background-color: black;
   text-align: center;
+  color: white;
+}
+
+footer p {
+  text-align: center;
+  margin: auto;
+  padding: 10% 0 10% 0;
 }
 
 
