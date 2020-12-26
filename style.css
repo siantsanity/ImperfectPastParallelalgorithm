@@ -9,6 +9,7 @@ body {
 header {
   background-color: burlywood;
   margin-bottom: 40px;
+  border: 1em black;
 }
 
 header h1 {
@@ -132,6 +133,7 @@ img {
   width: 100%;
   padding: 20px 20px 0 0;
   border-radius: 20em;
+  border: 5em black;
 }
 
 .group {
@@ -155,13 +157,14 @@ img {
 }
 
 .item {
-  flex: 1;
+  flex: 2;
   align-content: auto;
   margin: auto;
 }
 
 section.bg-callout {   
    padding: 60px 0;
+   text-shadow: 2 #2f3061;
 }
 
 footer {
@@ -176,7 +179,4 @@ footer p {
   padding: 10% 0 10% 0;
 }
 
-article .group {
-  flex-direction: column;
-}
 
