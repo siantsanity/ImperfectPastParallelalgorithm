@@ -16,7 +16,7 @@ header h1 {
   color: black;
   text-align: center;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 header nav {
@@ -72,7 +72,7 @@ ol {
 }
 
 /* nav syntax to support mobile */
-@media all and (min-width: 600px){
+@media all and (min-width: 800px){
   header {
     display: flex;
     justify-content: space-between;
@@ -139,7 +139,7 @@ img {
   width: 100%;
   padding: 20px 20px 0 0;
   border-radius: 20em;
-  border: 5em black;
+  border: 20em black;
 }
 
 .group {
@@ -164,9 +164,7 @@ img {
 
 .item {
   flex: 1;
-  align-content: auto;
   margin: auto;
-  padding: 20em 0;
 }
 
 .bg-callout {   
@@ -178,15 +176,16 @@ img {
 footer {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 15px;
-  background-color: black;
+  background-color: brown;
   text-align: center;
   color: white;
+  margin: auto;
 }
 
 footer p {
   text-align: center;
   margin: auto;
-  padding: 10% 0 10% 0;
+  padding: 2em 2em 2em 2em;
 }
 
 
