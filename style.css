@@ -1,15 +1,10 @@
 
 body {
   background-color: #2f3061;
-  margin: auto;
+  margin: 0;
   background-image: url("images/common.jpeg");
   background-size: cover;
   border: 5px solid black;
-  width: 500;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-top: 15px;
 }
 
 header {
@@ -88,7 +83,7 @@ p {
 }
 
 /* nav syntax to support mobile */
-@media all and (min-width: 600px){
+/*@media all and (min-width: 600px){
   header {
     display: flex;
     justify-content: space-between;
@@ -103,7 +98,7 @@ p {
     color: #bdbdbd;
   }
 }
-
+*/
 h2 h3 {
   text-align: center;
   padding: 20px 0;
