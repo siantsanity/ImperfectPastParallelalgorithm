@@ -1,7 +1,7 @@
 
 body {
   background-color: #2f3061;
-  margin: 0;
+  margin: 100%;
   background-image: url("images/common.jpeg");
   background-size: cover;
   border: 5px solid black;
@@ -120,8 +120,6 @@ h4 {
 }
 
 section {
-  text-align: center;
-  margin-bottom: 100px;
   justify-content: center;
 }
 
