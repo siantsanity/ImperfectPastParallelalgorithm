@@ -1,15 +1,22 @@
 
 body {
   background-color: #2f3061;
-  margin: 0;
+  margin: auto;
   background-image: url("images/common.jpeg");
   background-size: cover;
+  border: 5px solid black;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 header {
   background-color: burlywood;
   margin-bottom: 40px;
-  border: 1em black;
+  border: 5px solid black;
+  width: auto;
 }
 
 header h1 {
@@ -61,7 +68,8 @@ a:active { color: pink }
 .btn-primary {
   color: #fff;
   background-color: white;
-  border-color: #2e6da4;
+  border-color: brown;
+  border: 2px solid black;
 }
 
 ol {
@@ -71,8 +79,16 @@ ol {
   justify-content: center;
 }
 
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  color: black;
+  text-align: justify;
+  margin: 10% 0 10% 0;
+}
+
 /* nav syntax to support mobile */
-@media all and (min-width: 800px){
+@media all and (min-width: 600px){
   header {
     display: flex;
     justify-content: space-between;
@@ -114,34 +130,27 @@ section {
   justify-content: center;
 }
 
-p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 20px;
-  color: black;
-  text-align: center;
-  margin: 10% 0 10% 0;
-}
-
 ul {
   text-align: center;
   color: black;
   list-style: none;
   font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 hr {
-  height: 20px;
-  background-color: black;
-  border: #f26df9;
-  margin: 10%;
+  border: 0;
+  height: 55px;
+  background-image: url(images/hrImage.webp);
+  background-repeat: no-repeat;
 }
 
 img {
   margin: auto;
   width: 100%;
-  padding: 20px 20px 0 0;
   border-radius: 20em;
-  border: 20em black;
+  border: 5px solid black;
 }
 
 .group {
@@ -170,9 +179,11 @@ img {
 }
 
 .bg-callout {   
-   padding: 60px 0 60px 0;
+   padding: 50px 0 50px 0;
    background-image: url("images/common1.jpeg");
-
+   border: 5px solid black;
+   padding-right: 10px;
+   padding-left: 10px;
 }
 
 footer {
@@ -182,12 +193,36 @@ footer {
   text-align: center;
   color: white;
   margin: auto;
+  border: 5px solid black;
 }
 
 footer p {
   text-align: center;
   margin: auto;
-  padding: 2em 2em 2em 2em;
+  padding-bottom: 10px;
 }
+
+/* Contact Form Design */
+
+form {
+  padding-right: 8px;
+  /* Fixed small sizing issue on the right */
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+
 
 
