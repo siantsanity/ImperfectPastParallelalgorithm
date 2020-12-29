@@ -83,7 +83,7 @@ p {
 }
 
 /* nav syntax to support mobile */
-/*@media all and (min-width: 600px){
+@media all and (min-width: 500px){
   header {
     display: flex;
     justify-content: space-between;
@@ -97,8 +97,13 @@ p {
   header nav ul li a:hover {
     color: #bdbdbd;
   }
+
+  article {
+    align-content: center;
+  }
+
 }
-*/
+
 h2 h3 {
   text-align: center;
   padding: 20px 0;
@@ -119,10 +124,6 @@ h4 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-section {
-  justify-content: center;
-}
-
 ul {
   text-align: center;
   color: black;
@@ -140,8 +141,8 @@ hr {
 }
 
 img {
-  margin: auto;
-  width: 100%;
+  margin: 0;
+  width: 75%;
   border-radius: 20em;
   border: 5px solid black;
 }
@@ -171,12 +172,17 @@ img {
   margin: auto;
 }
 
+.item-double{
+  flex: 2;
+}
+
 .bg-callout {   
    padding: 50px 0 50px 0;
    background-image: url("images/common1.jpeg");
    border: 5px solid black;
    padding-right: 10px;
    padding-left: 10px;
+   align-items: left;
 }
 
 footer {
