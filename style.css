@@ -1,7 +1,7 @@
 
 body {
   background-color: #2f3061;
-  margin: 100%;
+  margin: 0;
   background-image: url("images/common.jpeg");
   background-size: cover;
   border: 5px solid black;
@@ -153,6 +153,7 @@ img {
   width: 75%;
   border-radius: 20em;
   border: 5px solid black;
+  align-content: center;
 }
 
 .group {
