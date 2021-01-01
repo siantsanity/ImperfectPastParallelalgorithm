@@ -54,19 +54,14 @@ a:active { color: pink }
 
 .btn {
   display: inline-block;
-  font-family: arial, sans-serif;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
   margin: 10px;
   padding: 6px 12px;
   border-radius: 6px;
+  text-decoration: none;
 }
 
 .btn-primary {
   background-color: white;
-  border-color: brown;
-  border: 2px solid black;
 }
 
 ol {
@@ -86,7 +81,7 @@ p {
 }
 
 /* nav syntax to support mobile */
-@media all and (min-width: 600px){
+@media all and (min-width: 700px){
   header {
     display: flex;
     justify-content: space-between;
@@ -99,10 +94,6 @@ p {
 
   header nav ul li a:hover {
     color: #bdbdbd;
-  }
-
-  img {
-    align-content: center;
   }
 
 }
@@ -155,7 +146,7 @@ ul {
 
 hr {
   border: 0;
-  /*height: 55px;*/
+  height: 55px;
   background-image: url(images/hrImage.webp);
   background-repeat: no-repeat;
 }
@@ -172,12 +163,18 @@ img {
 .group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: auto;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.group img {
+  width: auto; 
 }
 
 .item {
   margin: auto;
+  flex-shrink: auto;
 }
 
 .item-double{
@@ -194,11 +191,6 @@ img {
 
 
 footer {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 15px;
-  background-color: brown;
-  color: white;
-  margin-bottom: 0;
   border: 5px solid black;
 }
 
@@ -207,27 +199,48 @@ footer p {
   margin: 0;
   padding-bottom: 10px;
   padding-top: 10px;
+  background-color: brown;
+}
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 /* Contact Form Design */
 
 form {
   padding-right: 8px;
-  /* Fixed small sizing issue on the right */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 form label {
   display: block;
+  font-size: 20px;
 }
 
 form input, 
 form textarea {
   width: 100%;
   margin-bottom: 20px;
+  border: 2px solid black;
 }
 
 form textarea {
   height: 160px;
+}
+
+form button {
+  border: 2px solid black;
+  background-color: brown;
+  color: black;
 }
 
 
