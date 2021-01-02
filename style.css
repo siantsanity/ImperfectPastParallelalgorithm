@@ -4,16 +4,13 @@ body {
   background-image: url("images/common1.jpeg");
   background-size: cover;
   border: 5px solid black;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+  width: 100%;
 }
 
 header {
   background-color: burlywood;
   margin-bottom: 40px;
-  border: 5px solid black;
+  border-bottom: 5px solid black;
   width: auto;
 }
 
@@ -29,19 +26,25 @@ header nav {
   justify-content: center;
 }
 
+header nav ol li a {
+  display: flex;
+  padding-left: 0;
+}
+
 header nav ul {
   display: flex;
   padding-left: 0;
   list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
-  margin: 0 20px 0 0;
+  margin: 0 20px 0  0;
 }
 
-header nav ul li:last-child a {
+header nav ul ol li:last-child a {
   margin-right: 0;
 }
 
@@ -58,8 +61,14 @@ header nav ul li:last-child a {
     margin-top: 8px;
   }
 
-  header nav ul li a:hover {
+  header nav li ol a:hover {
     color: #bdbdbd;
+  }
+
+  header h1 {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
   }
 
 }
@@ -69,8 +78,11 @@ main {
 }
 
 section {
+  padding-top: 2em;
   margin-bottom: 100px;
 }
+
+
 
 h1 {
   font-size: 30px;
@@ -109,13 +121,13 @@ h4 {
 p {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
-  font-weight: 400px;
+  font-weight: 800px;
   color: black;
-  text-shadow: 1em;
+  padding: 0 0 10px 10px;
 }
 
 footer {
-  border: 5px solid black;
+  border-top: 5px solid black;
 }
 
 footer p {
@@ -124,6 +136,7 @@ footer p {
   padding-bottom: 10px;
   padding-top: 10px;
   background-color: brown;
+
 }
 
 a {
@@ -140,22 +153,21 @@ img {
   margin: 0;
   width: 80%;
   border: 5px solid black;
-  border-style: solid;
   align-content: center;
+  padding-right: 2em;
 }
 
 .group {
   display: flex;
   flex-direction: column;
   margin: auto;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 
 .item {
-  margin: auto;
-  flex-shrink: auto;
+  flex: 1;
+  margin: 10px;
+  flex-shrink: 3;
 }
 
 .item-double{
@@ -243,9 +255,8 @@ ol {
 .bg-callout {   
    padding: 50px 0 50px 0;
    background-image: url("images/common.jpeg");
+   background-size: cover;
    border: 5px solid black;
-   padding-right: 10px;
-   padding-left: 10px;
 }
 
 ul {
