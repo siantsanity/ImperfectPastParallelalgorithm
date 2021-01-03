@@ -4,7 +4,7 @@ body {
   background-image: url("images/common1.jpeg");
   background-size: cover;
   border: 5px solid black;
-  width: 100%;
+  margin: auto;
 }
 
 header {
@@ -100,21 +100,13 @@ h2 {
   text-align: center;
 }
 
-h3 {
+styleA-h3 {
  text-align: center;
   margin: auto;
   padding: 2em 0 2em 0;
   color: black;
   font-size: 25px;
   text-decoration: underline black;
-}
-
-h4 {
-  text-align: center;
-  margin: auto;
-  padding: 2em 0 2em 0;
-  color: black;
-  font-size: 25px;   
 }
 
 
@@ -136,7 +128,7 @@ footer p {
   padding-bottom: 10px;
   padding-top: 10px;
   background-color: brown;
-
+  padding-left: 0px;
 }
 
 a {
@@ -144,34 +136,26 @@ a {
 	text-decoration: none;
 }
 
-a:link { color: blue }
+a:link { color: brown }
 a:visited { color: black }
 a:hover { color: red }
 a:active { color: pink }
 
 img {
-  margin: 0;
-  width: 80%;
+  margin: -5px;
+  width: 100%;
   border: 5px solid black;
   align-content: center;
-  padding-right: 2em;
 }
 
 .group {
   display: flex;
   flex-direction: column;
-  margin: auto;
 }
 
 
 .item {
   flex: 1;
-  margin: 10px;
-  flex-shrink: 3;
-}
-
-.item-double{
-  flex: 2;
 }
 
 @media all and (min-width: 800px) {
@@ -185,29 +169,31 @@ img {
 }
 
 hr {
-  
   background-image: url(images/hrImage.webp);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-size: 50%;
+  border: none;
+  background-color: black;
+  border-radius: 63%
 }
 
 
-/* Contact Form Design*/ 
+/* Contact Form Design*/
 
 form {
-  padding-right: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 form label {
-  display: block;
   font-size: 20px;
 }
 
-form input, 
+form input,
 form textarea {
-  width: 100%;
+  width: 95%;
   margin-bottom: 20px;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 form textarea {
@@ -252,7 +238,7 @@ ol {
   }
 }
 
-.bg-callout {   
+.bg-callout {
    padding: 50px 0 50px 0;
    background-image: url("images/common.jpeg");
    background-size: cover;
@@ -265,7 +251,3 @@ ul {
   font-size: 20px;
   padding-right: 10px;
 }
-
-
-
-
