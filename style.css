@@ -4,7 +4,6 @@ body {
   background-image: url("images/common1.jpeg");
   background-size: cover;
   border: 5px solid black;
-  margin: auto;
 }
 
 header {
